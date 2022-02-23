@@ -17,14 +17,16 @@ class Post extends Component {
       'November',
       'December',
     ];
-    let dateString = months[postDate.getMonth()];
-    dateString += ' ' + postDate.getDate();
-    dateString += `, ${postDate.getFullYear()}`;
+    let dateString = `${
+      months[postDate.getMonth()]
+    } ${postDate.getDate()}, ${postDate.getFullYear()}`;
     return (
-      <div key={post.id} className='mb-2'>
-        <h2 className='blogTitle px-3'>{post.title}</h2>
-        <p>{post.body}</p>
-        {dateString} by Ben Merchant
+      <div key={post.id} className='mb-3 card'>
+        <h3 className='card-header'>{post.title}</h3>
+        <div className='card-body'>
+          <p className='card-text'>{post.body}</p>
+          <p className='card-text text-muted'>{dateString} by Ben Merchant</p>
+        </div>
       </div>
     );
   }
