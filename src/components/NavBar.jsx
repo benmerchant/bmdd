@@ -5,9 +5,15 @@ class NavBar extends Component {
       <nav className='navbar navbar-expand-md navbar-dark fixed-top bg-dark'>
         <div className='container-fluid'>
           <a className='navbar-brand' href='./'>
+            <img
+              src='/ben_logo_gray_knockout.png'
+              alt='Ben Merchant'
+              width='30'
+              className='d-inline-block align-text-top mx-2'
+            />
             Ben Merchant Dot Dev
           </a>
-          <button
+          {/* <button
             className='navbar-toggler'
             type='button'
             data-bs-toggle='collapse'
@@ -17,7 +23,7 @@ class NavBar extends Component {
             aria-label='Toggle navigation'
           >
             <span className='navbar-toggler-icon'></span>
-          </button>
+          </button> */}
           {/* <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
